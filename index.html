@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Travel!!</title>
+    <!-- swiper css -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cookie.css">
+</head>
+
+<body>
+    
+   
+    <!-- header section starts -->
+    <header>
+
+        <div id="menu-bar" class="fa-solid fa-bars"></div>
+        <a href="#" class="logo">Make<span> MY</span> Trip✈</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa-solid fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search-here">
+            <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+        </form>
+    </header>
+
+
+    <!-- header section ends -->
+
+    <!-- login fom container starts -->
+    <div class="login-form-container">
+
+        <i class="fa-solid fa-circle-xmark" id="form-close"></i>
+        <form action="login.php" method="post">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter your email" name="email">
+            <input type="password" class="box" placeholder="Enter your password" name="password">
+            <input type="submit" value="login now" class="btn">
+            <input type="chackbox" id="remember">
+            <!-- <label for="remember">remember me</label> -->
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">register now</a></p>
+
+        </form>
+    </div>
+    <!-- login fom container ends -->
+
+    
+    
+
+    <!-- home section starts here -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Adventure is worthwhile</h3>
+            <p>discover new places with us, adventure awits</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="img/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="./img/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- Cookie creation starts -->
+    <div class="wrapper">
+        <i class="fa-solid fa-cookie"></i>
+        <div class="content">
+            <h1>Cookies Consent</h1>
+            <p>This website use cookies to ensure you get the best experience on our website</p>
+            <div class="buttons">
+                <button class="item">Accept Cookie</button>
+                <a href="#" class="item">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <!-- Cookie creation ends -->
+
+    
+    <!-- book section starts -->
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="./img/book-img.svg" alt="">
+            </div>
+
+
+            <form action="book.php" method="post">
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="text" placeholder="place name" name="place">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="number of guests" name="count">
+                </div>
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date" name="arrival_date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date" name="leaving_date">
+                </div>
+                <input type="submit" class="btn" value="book now" onclick="alert('Your Booking Successfully Done')">
+            </form>
+        </div>
+    </section>
+    <!-- book section ends -->
+
+    <!-- packages section starts -->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="./img/p-1.jpg" alt="">
+
+                <div class="content">
+                    <h3> <i class="fa-solid fa-location-dot"></i> Mathura</h3>
+                    <p>5 days 4 nights</p>
+                    <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">RS12000.00 <span>RS15000.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/p-2.jpg" alt="">
+
+                <div class="content">
+                    <h3> <i class="fa-solid fa-location-dot"></i> Agra</h3>
+                    <p>6 days 5 nights</p>
+                    <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">RS10000.00 <span>RS12000.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/p-3.jpg" alt="">
+
+                <div class="content">
+                    <h3> <i class="fa-solid fa-location-dot"></i> Rajasthan</h3>
+                    <p>3 days 2 nights</p>
+                    <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">RS10000.00 <span>RS8000.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/p-4.jpg" alt="">
+
+                <div class="content">
+                    <h3> <i class="fa-solid fa-location-dot"></i>Tamil Nadu </h3>
+                    <p>4 days 3 nights</p>
+                    <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">RS7000.00 <span>RS8000.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/p-5.jpg" alt="">
+
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Karnataka</h3>
+                    <p>2 days 1 night</p>
+                    <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">RS5000.00 <span>RS7000.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/p-6.jpg" alt="">
+
+                <div class="content">
+                    <h3> <i class="fa-solid fa-location-dot"></i> Kerala</h3>
+                    <p>3 days 2 nights</p>
+                    <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">RS9000.00 <span>RS12000.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- packages section ends -->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fa-solid fa-hotel"></i>
+                <h3>Affordable hotels</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h3>safety guide</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-earth-asia"></i>
+                <h3>Around the world</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-plane-up"></i>
+                <h3>Fastest travel</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-person-hiking"></i>
+                <h3>adventures</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <!-- services section ends -->
+
+    <!-- gallery section starts -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./img/g-1.jpg" alt="">
+                <div class="content">
+                    <h3>Rajasthan Fort</h3>
+                    <p></p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/img1.jpeg" alt="">
+                <div class="content">
+                    <h3> Mathura </h3>
+                    <p> </p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/img2.jpeg" alt="">
+                <div class="content">
+                    <h3>Tamil Nadu</h3>
+                    <p></p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/img3.jpeg" alt="">
+                <div class="content">
+                    <h3>Hampi</h3>
+                    <p></p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/img4.jpeg" alt="">
+                <div class="content">
+                    <h3>Kolkata</h3>
+                    <p></p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/img5.jpeg" alt="">
+                <div class="content">
+                    <h3>Goa</h3>
+                    <p></p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/img6.jpeg" alt="">
+                <div class="content">
+                    <h3>Mumbai</h3>
+                    <p></p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/img7.jpeg" alt="">
+                <div class="content">
+                    <h3>Taj Mahal</h3>
+                    <p></p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- gallery section ends -->
+
+    <!-- reviw section start -->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+        <div class="swiper mySwiper review-slider">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/pic1.png" alt="">
+                        <h3>Ana</h3>
+                        <p></p>
+                        <div class="stars">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/pic2.png" alt="">
+                        <h3>Alexander</h3>
+                        <p></p>
+                        <div class="stars">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/pic3.png" alt="">
+                        <h3>Emma</h3>
+                        <p></p>
+                        <div class="stars">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./img/pic4.png" alt="">
+                        <h3>Xavier</h3>
+                        <p></p>
+                        <div class="stars">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- reviw section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="./img/contact-img.svg" alt="">
+            </div>
+            
+            <form action="contact.php" method="post">
+                <div class="inputBox">
+                    <input type="text" placeholder="name" name="fullname">
+                    <input type="email" placeholder="email" name="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number" name="number">
+                    <input type="text" placeholder="subject" name="subject">
+                </div>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+                <!-- <input type="submit" class="btn" value="send Message"> -->
+                <button class="btn" onclick="alert('your message sent successfully')">send message</button>
+            </form>
+        </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- brand section starts -->
+    <!-- <section class="brand-container">
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/5.jpg" alt=""></div>
+            </div>
+        </div>
+    </section> -->
+    <!-- brand section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About Us</h3>
+                <p>we are providing the best services since 2002</p>
+                
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">India</a>
+                <a href="#">Usa</a>
+                <a href="#">France</a>
+                <a href="#">South Korea</a>
+                <a href="#">japan</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">book</a>
+                <a href="#">packages</a>
+                <a href="#">services</a>
+                <a href="#">gallery</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+              
+            </div>
+        </div>
+
+        <h1 class="credit">Created by <span>Poonam Bhilare </span>| All rights reserved!</h1>
+    </section>
+    <!-- footer section ends -->
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/06088bb5d1.js" crossorigin="anonymous"></script>
+    <!-- custom js file -->
+    <script src="./js/script.js"></script>
+    <!-- custom js for cookies -->
+    <script src="./js/cookie.js"></script>
+</body>
+
+</html>
