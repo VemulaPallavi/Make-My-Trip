@@ -1,0 +1,178 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lets Travel!!</title>
+        <!-- swiper css -->
+        <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+        <!-- custom css file -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/cookie.css">
+</head>
+
+<body>
+    
+<!-- more places section starts -->
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>p</span>
+        <span>l</span>
+        <span>a</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="./img/m-1.jpg" alt="">
+
+            <div class="content">
+                <h3> <i class="fa-solid fa-location-dot"></i> Mathura</h3>
+                <p></p>
+                <div class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="price">RS12000.00 <span>RS15000.00</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./img/m-2.jpg" alt="">
+
+            <div class="content">
+                <h3> <i class="fa-solid fa-location-dot"></i> Agra</h3>
+                <p></p>
+                <div class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="price">RS10000.00 <span>RS12000.00</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./img/m-3.jpg" alt="">
+
+            <div class="content">
+                <h3> <i class="fa-solid fa-location-dot"></i> Rajasthan</h3>
+                <p></p>
+                <div class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="price">RS10000.00 <span>RS8000.00</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./img/m-4.jpg" alt="">
+
+            <div class="content">
+                <h3> <i class="fa-solid fa-location-dot"></i>Tamil Nadu </h3>
+                <p></p>
+                <div class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="price">RS7000.00 <span>RS8000.00</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./img/m-5.jpg" alt="">
+
+            <div class="content">
+                <h3><i class="fa-solid fa-location-dot"></i> Karnataka</h3>
+                <p></p>
+                <div class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="price">RS5000.00 <span>RS7000.00</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./img/m-6.jpg" alt="">
+
+            <div class="content">
+                <h3> <i class="fa-solid fa-location-dot"></i> Kerala</h3>
+                <p></p>
+                <div class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="price">RS9000.00 <span>RS12000.00</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- more places section ends -->
+<!-- book section starts -->
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="./img/book-img.svg" alt="">
+        </div>
+
+
+        <form action="book.php" method="post">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name" name="place">
+            </div>
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guests" name="count">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date" name="arrival_date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date" name="leaving_date">
+            </div>
+            <input type="submit" class="btn" value="book now" onclick="alert('Your Booking Successfully Done')">
+        </form>
+    </div>
+</section>
+<!-- book section ends -->
+</body>
+</html>
